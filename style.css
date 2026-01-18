@@ -32,6 +32,10 @@ header{
   padding-bottom: 24px;
 }
 
+.hide-desktop-menubar{
+  display: none;
+}
+
 .nav-menu{
   display: flex;
   justify-content: space-between;
@@ -73,4 +77,38 @@ header{
 .nav-menu button:hover{
    background: linear-gradient(45deg, #164dc5,#5c0943, #6de40c);
    transform: translateY(-3px) scale(1.05);
+}
+
+
+
+
+
+/* ======================= responsive ============================================ */
+
+/* mobile device */
+/* header */
+
+@media screen and (max-width: 576px) {
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hide-desktop-menubar{
+  display: block;
+}
+
+.nav-menu ul{
+  display: none;
+}
+
+.nav-menu button{
+  display: none;
+} 
+
+
+
+
+
 }
