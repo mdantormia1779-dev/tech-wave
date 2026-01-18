@@ -187,6 +187,73 @@ header{
 }
 
 
+/* about section */
+.about-section{
+  background-color: #1A0B2E;
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.about-tittle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-tittle h1{
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.about-tittle p{
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
+
+.horizontal-about{
+  border-bottom: 1px solid #FFFFFF;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.about-cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  place-items: center;
+}
+
+.card h1{
+  font-size: 48px;
+  font-weight: 900;
+  color: #00FF88;
+  margin-bottom: 16px;
+}
+
+.card p{
+  font-size: 16px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ======================= responsive ============================================ */
 
 /* mobile device */
@@ -252,6 +319,29 @@ header{
 .hero-buttons {
   margin-bottom: 40px;
 }
+
+/* about section */
+.about-tittle h1 {
+    font-size: 30px;
+}
+
+.about-tittle p {
+    font-size: 13px;
+}
+
+.about-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.card h1 {
+    font-size: 40px;
+}
+
+
+
+
+
 
 
 
