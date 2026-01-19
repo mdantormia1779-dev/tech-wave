@@ -126,6 +126,7 @@ header{
   color: white;
   text-align: center;
   margin-bottom: 24px;
+  opacity: 80%;
 }
 
 .image-notes{
@@ -213,12 +214,14 @@ header{
   line-height: 20px;
   color: white;
   text-align: center;
+  opacity: 80%;
 }
 
 .horizontal-about{
   border-bottom: 1px solid #FFFFFF;
   margin-top: 80px;
   margin-bottom: 80px;
+  opacity: 10%;
 }
 
 .about-cards{
@@ -280,6 +283,7 @@ header{
 .grid-all-tittle p{
   color: white;
   font-size: 16px;
+  opacity: 60%;
 }
 
 
@@ -369,6 +373,7 @@ transform: translateY(-3px) scale(1.05);
   color: white;
   line-height: 24px;
   margin-bottom: 12px;
+  opacity: 60%;
 }
 
 
@@ -436,6 +441,7 @@ transform: translateY(-3px) scale(1.05);
   color: white;
   line-height: 24px;
   margin-bottom: 16px;
+  opacity: 60%;
 }
 
 .social{
@@ -444,7 +450,47 @@ transform: translateY(-3px) scale(1.05);
   align-items: center;
 }
 
+/* footer section */
+footer{
+  background-image: url(assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.fotter-section{
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.fotter-section p{
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 16px;
+  opacity: 60%;
+}
+
+.footer-images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-images span{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
@@ -623,6 +669,20 @@ transform: translateY(-3px) scale(1.05);
   align-items: center;
   justify-content: center;
 }
+
+/* footer section */
+.footer-top-images{
+  margin-top: 40px;
+}
+
+.copyright{
+  margin-bottom: 40px;
+}
+
+
+
+
+
 
 
 }
