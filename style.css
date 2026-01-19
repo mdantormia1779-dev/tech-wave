@@ -56,6 +56,7 @@ header{
   font-weight: 500;
 }
 
+
 .nav-menu ul a:hover{
   color: #FB09B4;
   font-weight: bold;
@@ -907,7 +908,7 @@ margin: 0 auto;
 
 /* ======================================= 1440px large laptop ============================================= */
 
-@media screen and (min-width: 1280) and (max-width: 1140px) {
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
 
 .container {
   max-width: 1200px;
@@ -991,7 +992,7 @@ margin: 0 auto;
   grid-template-rows: repeat(3, 1fr);
   gap: 50px;
 }
-all responsive done
+
 
 .tech-tittle {
   font-size: 100px;
