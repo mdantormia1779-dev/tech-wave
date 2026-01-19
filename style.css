@@ -402,6 +402,11 @@ transform: translateY(-3px) scale(1.05);
   transform: translateY(-3px) scale(1.05);
 }
 
+.feature-images iframe{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
 
 /* host section */
 .host-tittle{
