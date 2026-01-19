@@ -324,10 +324,10 @@ transition: all 0.3s ease;
 .grid-3:hover,
 .grid-4:hover,
 .grid-5:hover{
-/* box-shadow: 0px 0px 22px 10px rgba(0,13,26,0.72);
-transform: scale(1.01); */
-background: linear-gradient(45deg, #164dc5,#5c0943, #6de40c);
-transform: translateY(-3px) scale(1.05);
+  /* box-shadow: 0px 0px 22px 10px rgba(0,13,26,0.72);
+  transform: scale(1.01); */
+  background: linear-gradient(45deg, #164dc5,#5c0943, #6de40c);
+  transform: translateY(-3px) scale(1.05);
 }
 
 
@@ -499,9 +499,9 @@ footer{
 
 
 
-/* ======================= responsive ============================================ */
+/* ====================================responsive============================================================== */
 
-/* mobile device */
+/*====================================== mobile device ===================================*/
 /* header */
 
 @media screen and (max-width: 576px) {
@@ -567,11 +567,11 @@ footer{
 
 /* about section */
 .about-tittle h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .about-tittle p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .about-tittle p br{
@@ -579,8 +579,8 @@ footer{
 }
 
 .about-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .card h1 {
@@ -683,11 +683,388 @@ footer{
 .copyright{
   margin-bottom: 40px;
 }
+}
 
 
+/* ========================== Medium Device: 576px to 992 px (Optional)=============================== */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hide-desktop-menubar{
+  display: block;
+}
+
+.nav-menu ul{
+  display: none;
+}
+
+.nav-menu button{
+  display: none;
+} 
+
+/* hero section */
+.hero-main-section {
+  padding: 0px 0px;
+}
+
+.hero-image-circle {
+  padding: 60px;
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.hero-image-circle img{
+  width: 80px;
+  height: 80px;
+}
+
+.image-notes {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A0B2E;
+  padding: 8px 16px;
+  background-color: #00FF88;
+  border-radius: 1000px;
+  position: absolute;
+  margin-top: -146px;
+  margin-left: 117px;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+}
+
+.hero-main-section h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.hero-buttons {
+  margin-bottom: 40px;
+}
+
+/* about section */
+.about-tittle h1 {
+    font-size: 30px;
+}
+
+.about-tittle p {
+    font-size: 13px;
+}
+
+.about-tittle p br{
+  display: none;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.card h1 {
+    font-size: 40px;
+}
+
+/* tech wave section */
+
+.tech-wave-section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tech-grid {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5
+{
+  grid-column: 1/1;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.tech-tittle {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.grid-all-tittle h3 {
+  font-size: 22px;
+}
+
+/* feature-section */
+.feature-section {
+  margin-bottom: 60px;
+}
+
+.feature-cards {
+  grid-template-columns: repeat(1, 1fr);
+}
 
 
+.feature-images{
+  width: 100%;
+}
+
+.feature-images iframe{
+  height: 314px;
+}
+
+.feature-tittle {
+  font-size: 32px;
+}
+
+.feature-card-tittle h3 {
+  font-size: 20px;
+}
 
 
+.feature-background {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* host section */
+.host-tittle {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.alex-kumar-card {
+  padding: 24px;
+  flex-direction: column;
+}
+
+.host-card-tittle h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.host-card-tittle p{
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer section */
+.footer-top-images{
+  margin-top: 40px;
+}
+
+.copyright{
+  margin-bottom: 40px;
+}
+}
+
+
+/*  ============================= labtop 1024px ====================================================== */
+
+@media  screen and (min-width: 993px) and (max-width: 1024px){
+.container {
+max-width: 950px;
+margin: 0 auto;
+}
+
+.grid-all-tittle h3 {
+  font-size: 17px;
+}
+
+.feature-card-tittle h3 {
+  font-size: 12px;
+}
 
 }
+
+/* ================================== large laptop 1280px ================================================== */
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+}
+
+
+/* ======================================= 1440px large laptop ============================================= */
+
+@media screen and (min-width: 1280) and (max-width: 1140px) {
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+}
+
+
+/* ====================================== 4k view 1536px ====================================================== */
+
+@media screen and (min-width: 1441px) {
+
+.container {
+  max-width: 2300px;
+  margin: 0 auto;
+}
+
+
+.nav-menu button {
+  font-size: 25px;
+  padding: 23px 25px;
+}
+.hero-main-section h1 {
+  font-size: 100px;
+  margin-top: 43px;
+  margin-bottom: 12px;
+}
+
+.hero-main-section p {
+  font-size: 50px;
+  margin-bottom: 28px;
+}
+
+.hero-btn-1 {
+  padding: 30px 70px;
+  font-size: 50px;
+  gap: 10px;
+}
+
+.hero-btn-1 img{
+  width: 50px;
+}
+
+.hero-btn-2 {
+  padding: 30px 70px;
+  font-size: 50px;
+  gap: 10px;
+}.hero-btn-2 img{
+  width: 50px;
+}
+
+.about-tittle h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-tittle p {
+  font-size: 50px;
+  line-height: 90px;
+}
+
+.about-tittle br{
+  display: none;
+}
+
+.card h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 20px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
+}
+all responsive done
+
+.tech-tittle {
+  font-size: 100px;
+  margin-bottom: 45px;
+}
+
+.grid-all-tittle h3 {
+  font-size: 45px;
+  margin-top: 34px;
+  margin-bottom: 35px;
+}
+
+.grid-all-tittle p {
+  font-size: 30px;
+}
+
+.grid-1 {
+  padding: 107px 80px;
+}
+
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5 {
+  padding: 80px;
+}
+
+.feature-tittle {
+  font-size: 100px;
+  margin-bottom: 60px;
+}
+
+.feature-images iframe{
+  height: 400px;
+}
+
+.feature-card-tittle {
+  padding: 60px;
+}
+
+.feature-card-tittle h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.feature-card-tittle p {
+  font-size: 20px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.feature-time {
+  font-size: 50px;
+}.host-tittle {
+  font-size: 100px;
+  margin-bottom: 50px;
+}
+
+.host-card-tittle h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.host-card-tittle p {
+  font-size: 20px;
+  line-height: 50px;
+  margin-bottom: 35px;
+}
+
+.fotter-section p {
+  font-size: 30px;
+}
+
+}
+
+
+/* ========================================= all responsive done ========================================== */
