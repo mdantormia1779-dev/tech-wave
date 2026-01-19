@@ -320,8 +320,10 @@ transition: all 0.3s ease;
 .grid-3:hover,
 .grid-4:hover,
 .grid-5:hover{
-box-shadow: 0px 0px 22px 10px rgba(0,13,26,0.72);
-transform: scale(1.01);
+/* box-shadow: 0px 0px 22px 10px rgba(0,13,26,0.72);
+transform: scale(1.01); */
+background: linear-gradient(45deg, #164dc5,#5c0943, #6de40c);
+transform: translateY(-3px) scale(1.05);
 }
 
 
@@ -388,9 +390,61 @@ transform: scale(1.01);
 }
 
 .feautre-card-sample:hover{
-  box-shadow: 0px 0px 22px 10px rgba(0,13,26,0.72);
+  /* box-shadow: 0px 0px 22px 10px rgba(0,13,26,0.72);
   transform: scale(1.01);
+   */
+  background: linear-gradient(45deg, #164dc5,#5c0943, #6de40c);
+  transform: translateY(-3px) scale(1.05);
 }
+
+
+/* host section */
+.host-tittle{
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.alex-kumar-card{
+  background-color: rgba(53, 17, 101, 0.4);
+  padding: 40px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0px 10px -1px -7px #000000, 0px 0px 20px 7px rgba(0,13,26,0.56);
+  transition: all 0.3s ease;
+}
+
+.alex-kumar-card:hover{
+  background: linear-gradient(45deg, #164dc5,#5c0943, #6de40c);
+  transform: translateY(-3px) scale(1.05);
+}
+
+.host-card-tittle h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.host-card-tittle p{
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.social{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+
 
 
 
@@ -543,13 +597,32 @@ transform: scale(1.01);
   padding-bottom: 40px;
 }
 
+/* host section */
+.host-tittle {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
 
+.alex-kumar-card {
+  padding: 24px;
+  flex-direction: column;
+}
 
+.host-card-tittle h2 {
+  font-size: 24px;
+  text-align: center;
+}
 
+.host-card-tittle p{
+  text-align: center;
+}
 
-
-
-
+.social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
 
 
 }
