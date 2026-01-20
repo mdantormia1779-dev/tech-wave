@@ -4,6 +4,83 @@
   box-sizing: border-box;
 }
 
+
+/* =================================animation====================================================== */
+
+/* slide bottom */
+.slidebottom{
+  animation: slidedown 0.10s ease-out forwards;
+}
+
+
+@keyframes slidebottom {
+  0%{
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* slide down */
+
+.slidedown{
+  animation: slidedown 0.10s ease-out forwards;
+}
+
+
+@keyframes slidedown {
+  0%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* slide left */
+
+.slideleft{
+  animation: slideleft 0.5s ease-out forwards;
+}
+
+@keyframes slideleft {
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* slide right */
+
+.slideright{
+  animation: slideright 0.5s ease-out forwards;
+}
+
+@keyframes slideright {
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
 /* container */
 .container{
   max-width: 1200px;
@@ -31,6 +108,11 @@ header{
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #412567;
+
+}
+
+.nav-menu img:first-of-type{
+  animation: slideleft 0.8s ease-out forwards;
 }
 
 .hide-desktop-menubar{
@@ -43,19 +125,37 @@ header{
   align-items: center;
 }
 
+
+
 .nav-menu ul{
   list-style: none;
   display: flex;
   gap: 32px;
 }
 
+
+
 .nav-menu ul a{
+  display: inline-block;
   text-decoration: none;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 500;
+  opacity: 0;
+  transform: translateY(-15px);
+  animation: slidedown 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
+.nav-menu ul li:nth-child(1) a{
+  animation-delay: 0.15s;
+}
+
+.nav-menu ul li:nth-child(2) a{
+  animation-delay: 0.30s;
+}
+.nav-menu ul li:nth-child(3) a{
+  animation-delay: 0.45s;
+}
 
 .nav-menu ul a:hover{
   color: #FB09B4;
@@ -74,6 +174,7 @@ header{
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: all 0.3s ease-in;
+  animation: slideright 0.8s ease-out forwards;
 }
 
 .nav-menu button:hover{
@@ -114,12 +215,15 @@ header{
 .hero-image-circle:hover{
   transform: translateY(-3px) scale(1.05);
 }
+
+
 .hero-main-section h1{
   font-size: 60px;
   font-weight: 800;
   color: white;
   margin-top: 40px;
   margin-bottom: 8px;
+  animation: slideleft 0.5s ease-out forwards;
 }
 
 .hero-main-section p{
@@ -128,6 +232,7 @@ header{
   text-align: center;
   margin-bottom: 24px;
   opacity: 80%;
+  animation: slidedown 0.5s ease-out forwards;
 }
 
 .image-notes{
@@ -141,6 +246,21 @@ header{
   margin-top: -253px;
   margin-left: 240px;
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
+
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: notefloat 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes notefloat{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .hero-buttons{
@@ -161,6 +281,7 @@ header{
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: all 0.4s ease;
+  animation: slideleft 0.8s ease-out forwards;
 }
 
 .hero-btn-1:hover{
@@ -181,6 +302,7 @@ header{
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: all 0.4s ease;
+  animation: slideright 0.5s ease-out forwards;
 }
 
 .hero-btn-2:hover{
@@ -208,6 +330,7 @@ header{
   font-weight: bold;
   color: white;
   margin-bottom: 16px;
+  animation: slidebottom 0.5s ease-out forwards;
 }
 
 .about-tittle p{
@@ -216,6 +339,7 @@ header{
   color: white;
   text-align: center;
   opacity: 80%;
+  animation: slideleft 0.5s ease-out forwards;
 }
 
 .horizontal-about{
@@ -236,11 +360,13 @@ header{
   font-weight: 900;
   color: #00FF88;
   margin-bottom: 16px;
+  animation: slideleft 0.5s ease-out forwards;
 }
 
 .card p{
   font-size: 16px;
   color: white;
+  animation: slideleft 0.8s ease-out forwards;
 }
 
 /* tech wave section */
@@ -257,6 +383,7 @@ header{
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 40px;
+  animation: slideleft 0.8s ease-out forwards;
 }
 
 .tech-grid{
@@ -310,6 +437,7 @@ header{
 }
 
 
+
 .grid-1,
 .grid-2,
 .grid-3,
@@ -349,6 +477,7 @@ transition: all 0.3s ease;
   color: white;
   text-align: center;
   margin-bottom: 40px;
+  animation: slidedown 0.8s ease-out forwards;
 }
 
 
@@ -416,6 +545,7 @@ transition: all 0.3s ease;
   color: white;
   text-align: center;
   margin-bottom: 40px;
+  animation: slideright 0.5s ease-out forwards;
 }
 
 .alex-kumar-card{
@@ -428,6 +558,7 @@ transition: all 0.3s ease;
   gap: 24px;
   box-shadow: 0px 10px -1px -7px #000000, 0px 0px 20px 7px rgba(0,13,26,0.56);
   transition: all 0.3s ease;
+  animation: slideleft 0.5s ease-out forwards;
 }
 
 .alex-kumar-card:hover{
@@ -470,6 +601,7 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: slidedown 0.10s ease-out forwards;
 }
 
 
@@ -514,6 +646,7 @@ footer{
 
 .hide-desktop-menubar{
   display: block;
+  animation: slideright 0.8s ease-out forwards;
 }
 
 .nav-menu ul{
@@ -554,6 +687,7 @@ footer{
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25);
 }
 
+
 .hero-main-section h1 {
   font-size: 40px;
   font-weight: 800;
@@ -561,6 +695,8 @@ footer{
   margin-top: 24px;
   margin-bottom: 8px;
 }
+
+
 
 .hero-buttons {
   margin-bottom: 40px;
@@ -637,6 +773,7 @@ footer{
 
 .feature-tittle {
   font-size: 32px;
+
 }
 
 .feature-card-tittle h3 {
@@ -908,7 +1045,7 @@ margin: 0 auto;
 
 /* ======================================= 1440px large laptop ============================================= */
 
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
 
 .container {
   max-width: 1200px;
@@ -920,149 +1057,16 @@ margin: 0 auto;
 
 /* ====================================== 4k view 1536px ====================================================== */
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1537px) and (max-width: 2560px){
+
 
 .container {
-  max-width: 2300px;
-  margin: 0 auto;
-}
-
-
-.nav-menu button {
-  font-size: 25px;
-  padding: 23px 25px;
-}
-.hero-main-section h1 {
-  font-size: 100px;
-  margin-top: 43px;
-  margin-bottom: 12px;
-}
-
-.hero-main-section p {
-  font-size: 50px;
-  margin-bottom: 28px;
-}
-
-.hero-btn-1 {
-  padding: 30px 70px;
-  font-size: 50px;
-  gap: 10px;
-}
-
-.hero-btn-1 img{
-  width: 50px;
-}
-
-.hero-btn-2 {
-  padding: 30px 70px;
-  font-size: 50px;
-  gap: 10px;
-}.hero-btn-2 img{
-  width: 50px;
-}
-
-.about-tittle h1 {
-  font-size: 100px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.about-tittle p {
-  font-size: 50px;
-  line-height: 90px;
-}
-
-.about-tittle br{
-  display: none;
-}
-
-.card h1 {
-  font-size: 100px;
-  margin-bottom: 20px;
-}
-
-.card p {
-  font-size: 20px;
-}
-
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 50px;
-}
-
-
-.tech-tittle {
-  font-size: 100px;
-  margin-bottom: 45px;
-}
-
-.grid-all-tittle h3 {
-  font-size: 45px;
-  margin-top: 34px;
-  margin-bottom: 35px;
-}
-
-.grid-all-tittle p {
-  font-size: 30px;
-}
-
-.grid-1 {
-  padding: 107px 80px;
-}
-
-
-.grid-1, .grid-2, .grid-3, .grid-4, .grid-5 {
-  padding: 80px;
-}
-
-.feature-tittle {
-  font-size: 100px;
-  margin-bottom: 60px;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .feature-images iframe{
-  height: 400px;
-}
-
-.feature-card-tittle {
-  padding: 60px;
-}
-
-.feature-card-tittle h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-
-.feature-card-tittle p {
-  font-size: 20px;
-  line-height: 35px;
-  margin-bottom: 20px;
-}
-
-.feature-time {
-  font-size: 50px;
-}.host-tittle {
-  font-size: 100px;
-  margin-bottom: 50px;
-}
-
-.host-card-tittle h2 {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-.host-card-tittle p {
-  font-size: 20px;
-  line-height: 50px;
-  margin-bottom: 35px;
-}
-
-.fotter-section p {
-  font-size: 30px;
+  height: 314px;
 }
 
 }
